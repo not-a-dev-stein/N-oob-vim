@@ -10,7 +10,7 @@ local config = {
   },
   sections = {
     lualine_a = {'mode'},
-    lualine_b = {'branch'},
+    lualine_b = {'branch', 'b:gitsigns_status'},
     lualine_c = {'filename'},
     lualine_x = {'encoding', 'filetype'},
     lualine_y = {'progress'},

@@ -1,4 +1,4 @@
 require'nvim_comment'.setup {
-    line_mapping = "<leader>/",
-    operator_mapping = "<leader>//"
+    line_mapping = "<leader>//",
+    operator_mapping = "<leader>/"
 }
