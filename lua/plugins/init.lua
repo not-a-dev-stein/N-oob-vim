@@ -4,6 +4,7 @@ return require'packer'.startup(function()
 
     -- Plugins WITHOUT inline configurations
     use 'sainnhe/gruvbox-material'
+    use 'sbdchd/neoformat'
     use 'windwp/nvim-autopairs'
     use 'norcalli/nvim-colorizer.lua'
     use 'terrortylor/nvim-comment'

@@ -33,3 +33,6 @@ map("", "<Up>", 'v:count || mode(1)[0:1] == "no" ? "k" : "gk"', expr_opts)
 
 -- Integrated terminal bindings
 vim.cmd[[command! -nargs=* T split | resize 15 | terminal <args>]]  -- :T to open
+
+-- Auto-formatting with Neoformat
+map('', '<C-I>', '<ESC>:Neoformat<CR>', opts)

@@ -102,6 +102,10 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/stein/.local/share/nvim/site/pack/packer/start/lualine.nvim"
   },
+  neoformat = {
+    loaded = true,
+    path = "/home/stein/.local/share/nvim/site/pack/packer/start/neoformat"
+  },
   ["nvim-autopairs"] = {
     loaded = true,
     path = "/home/stein/.local/share/nvim/site/pack/packer/start/nvim-autopairs"
