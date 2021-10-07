@@ -8,9 +8,9 @@ return require'packer'.startup(function()
     use 'windwp/nvim-autopairs'
     use 'norcalli/nvim-colorizer.lua'
     use 'terrortylor/nvim-comment'
+    use 'nvim-treesitter/nvim-treesitter'
     use 'p00f/nvim-ts-rainbow'
     use 'kyazdani42/nvim-web-devicons'
-    use 'nvim-treesitter/nvim-treesitter'
     use 'lambdalisue/suda.vim'
         vim.cmd[[let g:suda_smart_edit = 1]]
 
