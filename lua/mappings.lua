@@ -23,8 +23,8 @@ map('n', '<c-k>', ':wincmd k<CR>', {silent = true})
 map('n', '<c-l>', ':wincmd l<CR>', {silent = true})
 
 -- Melhor experiência com indentação
-map('v', '>', '>gv', {silent = true})
-map('v', '<', '<gv', {silent = true})
+map('v', '>', '>gv', opts)
+map('v', '<', '<gv', opts)
 
 -- Mover a linha atual para cima ou para baixo sem precisar copiar e colar
 map('n', 'J', ':m .+1<CR>==', opts)

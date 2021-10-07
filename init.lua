@@ -1,8 +1,9 @@
 ---------------------------
---      NVIM CONFIG      --
+--       N(OOB)VIM       --
 ---------------------------
 -- Autor: Daimar Stein
 -- Email: daimarstein@pm.me
+-- Licensiado através da GPL v3.0.
 
 
 -- Configurações do usuário
