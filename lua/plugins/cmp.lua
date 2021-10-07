@@ -1,19 +1,21 @@
-require'cmp'.setup{
+local cmp = require'cmp'
+
+cmp.setup{
     snippet = {
         expand = function(args)
-            require('luasnip').lsp_expand(args.body) -- Para usar com o 'luasnip'
+            require('luasnip').lsp_expand(args.body) -- For use with luasnip'
         end,
     },
     mapping = {
-        ['<C-d>'] = require'cmp'.mapping.scroll_docs(-4),
-        ['<C-f>'] = require'cmp'.mapping.scroll_docs(4),
-        ['<C-Space>'] = require'cmp'.mapping.complete(),
-        ['<C-e>'] = require'cmp'.mapping.close(),
-        ['<CR>'] = require'cmp'.mapping.confirm({ select = true }),
+        ['<C-d>'] = cmp.mapping.scroll_docs(-4),
+        ['<C-f>'] = cmp.mapping.scroll_docs(4),
+        ['<C-Space>'] = cmp.mapping.complete(),
+        ['<C-e>'] = cmp.mapping.close(),
+        ['<CR>'] = cmp.mapping.confirm({ select = true }),
     },
     sources = {
         { name = 'nvim_lsp' },
-        { name = 'luasnip' }, -- Novamente, para uso com o 'luasnip'
+        { name = 'luasnip' }, -- For use with 'luasnip'
         { name = 'buffer' }
     }
 }

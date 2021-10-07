@@ -3,9 +3,8 @@ local set = vim.opt
 -- Mouse
 set.mouse = 'a'
 
--- Cores
+-- Colors
 set.termguicolors = true
-
 vim.g.colors_name = 'gruvbox-material'
 vim.cmd[[
     syntax on
@@ -16,10 +15,10 @@ vim.cmd[[
 -- Clipboard
 set.clipboard = 'unnamedplus'
 
--- Completar os inputs com TAB
+-- Completion using TAB
 set.completeopt = 'menu','menuone','noselect'
 
--- Indentação
+-- Indentation
 set.expandtab = true
 set.smartindent = true
 set.shiftwidth = 4
@@ -28,12 +27,12 @@ set.softtabstop = 4
 set.list = true
 set.listchars:append('space:⋅')
 
--- Número da linha
+-- Line number
 vim.wo.number = true
 vim.wo.cursorline = true
 set.relativenumber = true
 
--- Splits da tela
+-- Splits
 set.splitbelow = true
 set.splitright = true
 set.fillchars:append('vert:▕')
@@ -44,6 +43,6 @@ set.foldcolumn = 'auto'
 set.foldmethod = 'expr'
 set.foldexpr = 'nvim_treesitter#foldexpr()'
 
--- Backup e swap
+-- Backup and swap
 vim.o.swapfile = false
 vim.o.writebackup = false

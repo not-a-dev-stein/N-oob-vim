@@ -7,4 +7,4 @@ I like Neovim. A lot. I tried using VsCode for my really basic programming needs
 With no experience in Lua, a lot of procrastination time that should have gone to college work poured into it and a lot of trial and error, it's alive!
 
 ## What you can do to help
-Everything. No joke. I have no experience in Lua, so I'm sure there's a lot that can be optimized and improved. If you want to check it out (and probably cringe a little) feel free to check the code, and use it for whatever you need. It's  all yours, my fried.
+Everything. No joke. I have no experience in Lua, so I'm sure there's a lot that can be optimized and improved. If you want to check it out (and probably cringe a little) feel free to check the code, and use it for whatever you need. It's  all yours, my friend.

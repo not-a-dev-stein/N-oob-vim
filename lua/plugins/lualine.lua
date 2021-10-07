@@ -28,5 +28,5 @@ local config = {
   extensions = {}
 }
 
---  Garantir que o lualine seja iniciado
+--  Make sure that lualine is started
 lualine.setup(config)

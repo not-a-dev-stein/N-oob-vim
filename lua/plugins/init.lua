@@ -2,7 +2,7 @@ return require'packer'.startup(function()
     -- Permite que o packer gerencie a si mesmo
     use 'wbthomason/packer.nvim'
 
-    -- Plugins SEM config. manual
+    -- Plugins WITHOUT inline configurations
     use 'sainnhe/gruvbox-material'
     use 'windwp/nvim-autopairs'
     use 'norcalli/nvim-colorizer.lua'
@@ -13,7 +13,7 @@ return require'packer'.startup(function()
     use 'lambdalisue/suda.vim'
         vim.cmd[[let g:suda_smart_edit = 1]]
 
-    -- Plugins COM config manual
+    -- Plugins WITH inline configurations
     use {'lewis6991/gitsigns.nvim',
         requires = {'nvim-lua/plenary.nvim'},
     }
@@ -30,7 +30,7 @@ return require'packer'.startup(function()
         requires = 'kyazdani42/nvim-web-devicons',
     }
 
-    -- Configurações do LSP e Snippets
+    -- LSP and Snippets configurations
     use "neovim/nvim-lspconfig"
     use 'hrsh7th/cmp-nvim-lsp'
     use 'hrsh7th/cmp-buffer'
