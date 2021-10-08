@@ -33,11 +33,11 @@ vim.g.dashboard_custom_header = {
 }
 
 vim.g.dashboard_custom_section = {
-    a = { description = { "洛New File                  SPACE+f+n" }, command = "DashboardNewFile" },
-    b = { description = { " Find File                 SPACE+f+f" }, command = "Telescope find_files" },
-    c = { description = { " Find Word                 SPACE+f+w" }, command = "Telescope live_grep" },
-    d = { description = { " Find Help                 SPACE+f+h" }, command = "Telescope help_tags" },
-    e = { description = { "龎Read Manpages             SPACE+f+m" }, command = "Telescope man_pages" }
+    a = { description = { "洛New File                  SPACE+F+N" }, command = "DashboardNewFile" },
+    b = { description = { " Find File                 SPACE+F+F" }, command = "Telescope find_files" },
+    c = { description = { " Find Word                 SPACE+F+W" }, command = "Telescope live_grep" },
+    d = { description = { " Find Help                 SPACE+F+H" }, command = "Telescope help_tags" },
+    e = { description = { "龎Read Manpages             SPACE+F+M" }, command = "Telescope man_pages" }
 }
 vim.g.dashboard_custom_footer = {
     ' I have a plan to take down one of the four emperors! '
@@ -45,8 +45,5 @@ vim.g.dashboard_custom_footer = {
 
 -- Set the dashboard colors
 vim.cmd[[
-    :highlight dashboardFooter    guifg='#FABD2F'
-    :highlight dashboardHeader    guifg='#FABD2F'
-    :highlight dashboardCenter    guifg='#665c54'
-    :highlight dashboardShortCut  guifg='#665c54'
+    autocmd ColorScheme * highlight dashboardFooter guifg='#EEA825' | highlight dashboardHeader guifg='#EEA825'| highlight dashboardCenter guifg='#4C4F55' | highlight dashboardShortCut guifg='#4C4F55'
 ]]

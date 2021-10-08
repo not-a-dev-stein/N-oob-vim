@@ -9,7 +9,7 @@ I like Neovim. A lot. I tried using VsCode for my really basic programming needs
 With no experience in Lua, a lot of procrastination time that should have gone to college work poured into it and a lot of trial and error, it's alive! So now I want to maintain it and make it public so people who actually know what they are doing can help make it better.
 
 ### Colorscheme used
-  - [gruvbox.nvim](https://github.com/ellisonleao/gruvbox.nvim) - a port of the original gruvbox colorscheme made entirely in Lua using lush as a base; really good, really fast and optimized
+  - [onedark](https://github.com/olimorris/onedark.nvim)
 
 ### Language servers pre-configured with:
   - [lspconfig](https://github.com/neovim/nvim-lspconfig) - for native LSP
@@ -25,7 +25,7 @@ I decided not to use [lspinstall](https://github.com/kabouzeid/nvim-lspinstall) 
 
 ### Plugins included and pre-configured are:
   - [autopairs](https://github.com/windwp/nvim-autopairs) - for automatic pairing of brackets, parenthesis, etc.
-  - [bufferline](https://github.com/akinsho/bufferline.nvim) - A nice tab/buffer bar
+  - [barbar](https://github.com/romgrk/barbar.nvim) - A nice tab/buffer bar
   - [colorizer](https://github.com/norcalli/nvim-colorizer.lua) - for showing color on HEX codes (ex. #ffffff)
   - [comment](https://github.com/terrortylor/nvim-comment) - for easier line commenting (pre-configured with 'SPACE+/')
   - [dashboard](https://github.com/glepnir/dashboard-nvim) - Nice and clean dashboard for when you open nvim cleanly
@@ -52,11 +52,12 @@ I decided not to use [lspinstall](https://github.com/kabouzeid/nvim-lspinstall) 
 
 `ctrl+shift+i` to automatically format your code with Nformat;
 
-`ctrl+HJKL` to navigate between splits in your screen (including nvim-tree)
+`ctrl+hjkl` to navigate between splits in your screen (including nvim-tree)
+
+`ctrl+t` to open a terminal in split
+`ctrl+a` *in terminal mode* to return to normal mode
 
 ### Custom commands
-`:T` command to open a split terminal;
-
 `:LiveServer` to start your live server (still not fully implemented correctly)
 
 ## Biggest references and help

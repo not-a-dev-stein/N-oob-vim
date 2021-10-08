@@ -4,15 +4,10 @@ require'nvim-tree'.setup {
     auto_close = true,
     open_on_tab = true,
     update_focused_file = { enable = true },
-    view = { side = 'right', width = 25 }
+    view = { side='left', width = 26 }
 }
 
 local map = vim.api.nvim_set_keymap
-
--- Keyboard mappings
-map('n', '<C-n>', ':NvimTreeToggle<CR>', {noremap = true})
-map('n', '<leader>r', ':NvimTreeRefresh<CR>', {noremap = true})
-map('n', '<leader>n', ':NvimTreeFindFile<CR>', {noremap = true})
 
 -- Options (I have no idea how to port these "let g:" to lua)
 vim.cmd[[let g:nvim_tree_ignore = [ '.git', 'node_modules', '.cache' ]

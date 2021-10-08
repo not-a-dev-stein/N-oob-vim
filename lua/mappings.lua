@@ -31,8 +31,14 @@ map("", "k", 'v:count || mode(1)[0:1] == "no" ? "k" : "gk"', expr_opts)
 map("", "<Down>", 'v:count || mode(1)[0:1] == "no" ? "j" : "gj"', expr_opts)
 map("", "<Up>", 'v:count || mode(1)[0:1] == "no" ? "k" : "gk"', expr_opts)
 
--- Integrated terminal bindings
-vim.cmd[[command! -nargs=* T split | resize 15 | terminal <args>]]  -- :T to open
+-- Ctrl+t to open an integrated terminal in a split, like other IDEs 
+map('n', '<C-t>', ':split | resize 15 | set nonumber norelativenumber | terminal<CR>a', {silent = true})
+map('t', '<C-a>','<C-\\><C-n>', opts) -- Ctrl+a to exit terminal mode
 
 -- Auto-formatting with Neoformat
 map('', '<C-I>', '<ESC>:Format<CR>', opts)
+
+-- Toggling nvim-tree with barbar
+vim.api.nvim_set_keymap('n', '<C-n>', ':lua require"plugins.barbar".toggle()<CR>', opts)
+vim.api.nvim_set_keymap('n', '<leader>r', ':NvimTreeRefresh<CR>', {noremap = true})
+vim.api.nvim_set_keymap('n', '<leader>n', ':NvimTreeFindFile<CR>', {noremap = true})

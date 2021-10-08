@@ -15,7 +15,7 @@ require('mappings')
 -- Plugins --
 require('plugins.init')
 ---------------------------
-require('plugins.bufferline')
+require('plugins.barbar')
 require('plugins.cmp')
 require('plugins.comment')
 require('plugins.dashboard')
@@ -28,6 +28,7 @@ require('plugins.treesitter')
 ---------------------------
 require'colorizer'.setup()
 require'nvim-autopairs'.setup()
+
 
 -- Extras --
 -- These require extra packages to be installed for use,

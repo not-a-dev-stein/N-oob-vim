@@ -5,12 +5,11 @@ set.mouse = 'a'
 
 -- Colors
 set.termguicolors = true
-vim.g.colors_name = 'gruvbox'
+vim.g.colors_name = 'onedark'
+
 vim.cmd[[
-    syntax on
-    hi StatusLine guifg='#282828' guibg='#282828'
-    hi StatusLineNC guifg='#282828' guibg='#282828'
-]] -- Change these highlights if you change the colorscheme
+    autocmd ColorScheme * hi StatusLine guifg=none guibg=none | hi StatusLineNC guifg=none guibg=none | hi FoldColumn guifg='#ABB2BF' guibg=none | hi BufferVisibleSign ='#1f1f1f'
+]]  -- Change these highlights if you change the colorscheme
 
 -- Clipboard
 set.clipboard = 'unnamedplus'
@@ -29,13 +28,12 @@ set.listchars:append('space:⋅')
 
 -- Line number
 vim.wo.number = true
-vim.wo.cursorline = true
 set.relativenumber = true
 
 -- Splits
 set.splitbelow = true
 set.splitright = true
-set.fillchars:append('vert:▏')
+set.fillchars:append('vert:▕')
 set.fillchars:append('eob: ')
 
 -- Folding
@@ -47,3 +45,6 @@ set.foldexpr = 'nvim_treesitter#foldexpr()'
 -- Backup and swap
 vim.o.swapfile = false
 vim.o.writebackup = false
+
+-- Automatically running as sudo with Suda.vim
+vim.g.suda_smart_edit = 1
