@@ -1,5 +1,6 @@
 require'nvim-tree'.setup {
     lsp_diagnostics = true,
+    open_on_setup = true,
     auto_close = true,
     open_on_tab = true,
     update_focused_file = { enable = true },
@@ -15,6 +16,7 @@ map('n', '<leader>n', ':NvimTreeFindFile<CR>', {noremap = true})
 
 -- Options (I have no idea how to port these "let g:" to lua)
 vim.cmd[[let g:nvim_tree_ignore = [ '.git', 'node_modules', '.cache' ]
+        let g:nvim_tree_auto_ignore_ft = ['dashboard']
         let g:nvim_tree_gitignore = 1
         let g:nvim_tree_indent_markers = 1
         let g:nvim_tree_git_hl = 1

@@ -36,6 +36,7 @@ set.relativenumber = true
 set.splitbelow = true
 set.splitright = true
 set.fillchars:append('vert:▕')
+set.fillchars:append('eob: ')
 
 -- Folding
 set.foldnestmax = 2

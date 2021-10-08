@@ -3,6 +3,7 @@ return require'packer'.startup(function()
     use 'wbthomason/packer.nvim'
 
     -- Plugins WITHOUT inline configurations
+    use 'glepnir/dashboard-nvim'
     use 'sainnhe/gruvbox-material'
     use 'sbdchd/neoformat'
     use 'windwp/nvim-autopairs'
@@ -30,7 +31,10 @@ return require'packer'.startup(function()
     use {'kyazdani42/nvim-tree.lua',
         requires = 'kyazdani42/nvim-web-devicons',
     }
-
+    use {
+      'nvim-telescope/telescope.nvim',
+      requires = {'nvim-lua/plenary.nvim'}
+    }
     -- LSP and Snippets configurations
     use "neovim/nvim-lspconfig"
     use 'hrsh7th/cmp-nvim-lsp'

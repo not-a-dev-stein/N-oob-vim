@@ -6,7 +6,7 @@ local function buf_set_option(...) vim.api.nvim_buf_set_option(bufnr, ...) end
 
 -- Use a loop to conveniently call 'setup' on multiple servers and
 -- map buffer local keybindings when the language server attaches
-local servers = {'bashls','cssls', 'html', 'jsonls', 'pylsp', 'rust_analyzer', 'vimls'}
+local servers = {'bashls', 'clangd','cssls', 'html', 'jsonls', 'pylsp', 'rust_analyzer', 'vimls'}
 for _, lsp in ipairs(servers) do
 require('lspconfig')[lsp].setup {
     on_attach = on_attach,

@@ -7,7 +7,7 @@ map('n', '<SPACE>', '<Nop>', opts)
 vim.g.mapleader = " "
 
 -- Using ESC to disable search highlighting
-map("n", "<Esc>", ":noh <CR>", opts)
+map("n", "<Esc>", ":noh <CR>", {silent = true})
 
 -- Using Ctrl+HJKL to easily navigate between splits
 map('n', '<c-h>', ':wincmd h<CR>', {silent = true})

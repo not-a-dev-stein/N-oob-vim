@@ -85,6 +85,10 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/stein/.local/share/nvim/site/pack/packer/start/cmp_luasnip"
   },
+  ["dashboard-nvim"] = {
+    loaded = true,
+    path = "/home/stein/.local/share/nvim/site/pack/packer/start/dashboard-nvim"
+  },
   ["gitsigns.nvim"] = {
     loaded = true,
     path = "/home/stein/.local/share/nvim/site/pack/packer/start/gitsigns.nvim"
@@ -153,6 +157,10 @@ _G.packer_plugins = {
   ["suda.vim"] = {
     loaded = true,
     path = "/home/stein/.local/share/nvim/site/pack/packer/start/suda.vim"
+  },
+  ["telescope.nvim"] = {
+    loaded = true,
+    path = "/home/stein/.local/share/nvim/site/pack/packer/start/telescope.nvim"
   }
 }
 

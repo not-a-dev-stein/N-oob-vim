@@ -26,6 +26,7 @@ With no experience in Lua, a lot of procrastination time that should have gone t
   - [neoformat](https://github.com/sbdchd/neoformat) - for automatic formatting
   - [nvim-tree](https://github.com/kyazdani42/nvim-tree.lua) - an easy and fast file explorer to the side of the screen
   - [suda](https://github.com/lambdalisue/suda.vim) - for automatically running nvim with sudo when needed
+  - [telescope](https://github.com/nvim-telescope/telescope.nvim) - for easier searching and other functions
   - [treesitter](https://github.com/nvim-treesitter/nvim-treesitter) - for better syntax highlighting, indenting and folding (which you can use with 'za')
   - [ts-rainbow](https://github.com/p00f/nvim-ts-rainbow) - for color matching of brackets, parenthesis, etc.
   - [web-devicons](https://github.com/kyazdani42/nvim-web-devicons) - icons for other extensions, like nvim-tree and lualine 
