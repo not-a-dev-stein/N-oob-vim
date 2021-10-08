@@ -8,6 +8,9 @@ I like Neovim. A lot. I tried using VsCode for my really basic programming needs
 
 With no experience in Lua, a lot of procrastination time that should have gone to college work poured into it and a lot of trial and error, it's alive! So now I want to maintain it and make it public so people who actually know what they are doing can help make it better.
 
+### Colorscheme used
+  - [gruvbox.nvim](https://github.com/ellisonleao/gruvbox.nvim) - a port of the original gruvbox colorscheme made entirely in Lua using lush as a base; really good, really fast and optimized
+
 ### Language servers pre-configured with:
   - [lspconfig](https://github.com/neovim/nvim-lspconfig) - for native LSP
   - [cmp-nvim-lsp](https://github.com/hrsh7th/cmp-nvim-lsp) - for better integration with the native LSP

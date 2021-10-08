@@ -5,7 +5,6 @@ return require'packer'.startup(function()
     -- Plugins WITHOUT inline configurations
     use 'glepnir/dashboard-nvim'
     use 'mhartington/formatter.nvim'
-    use 'morhetz/gruvbox'
     use 'windwp/nvim-autopairs'
     use 'norcalli/nvim-colorizer.lua'
     use 'terrortylor/nvim-comment'
@@ -21,6 +20,9 @@ return require'packer'.startup(function()
     }
     use {'lewis6991/gitsigns.nvim',
         requires = {'nvim-lua/plenary.nvim'},
+    }
+    use {"ellisonleao/gruvbox.nvim", 
+        requires = {"rktjmp/lush.nvim"},
     }
     use {'lukas-reineke/indent-blankline.nvim',
         config = function()require("indent_blankline").setup {
