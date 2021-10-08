@@ -30,7 +30,7 @@ return require'packer'.startup(function()
             show_current_context = true,
         } end
     }
-    use {'hoob3rt/lualine.nvim',
+    use {'shadmansaleh/lualine.nvim',
         requires = {'kyazdani42/nvim-web-devicons', opt = true},
     }
     use {'kyazdani42/nvim-tree.lua',

@@ -35,7 +35,7 @@ set.relativenumber = true
 -- Splits
 set.splitbelow = true
 set.splitright = true
-set.fillchars:append('vert:│')
+set.fillchars:append('vert:▏')
 set.fillchars:append('eob: ')
 
 -- Folding

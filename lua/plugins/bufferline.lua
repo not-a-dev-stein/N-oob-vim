@@ -87,8 +87,63 @@ require'bufferline'.setup {
         diagnostic_visible = {
             guibg = '#3c3836',
         },
-        diagnostic_selected = {     -- Use this to change the current buffer's color
+        info = {
             guibg = '#7c6f64',
+        },
+        info_diagnostic = {
+            guibg = '#3c3836',
+        },
+        info_visible = {
+            guibg = '#3c3836',
+        },
+        info_diagnostic_visible = {
+            guibg = '#3c3836',
+        },
+        info_selected = {     -- Use this to change the current buffer's color
+            guibg = '#282828',
+        },
+        info_diagnostic_selected = {     -- Use this to change the current buffer's color
+            guibg = '#282828',
+        },
+        warning = {
+            guibg = '#3c3836'
+        },
+        warning_visible = {
+            guibg ='#3c3836',
+        },
+        warning_selected = {
+            guibg = '#282828',
+            gui = "bold",
+        },
+        warning_diagnostic = {
+            guibg = '#3c3836',
+        },
+        warning_diagnostic_visible = {
+            guibg = '#3c3836',
+        },
+        warning_diagnostic_selected = {
+            guibg = '#282828',
+            gui = "bold",
+        },
+        error = {
+            guibg = '#3c3836',
+        },
+        error_visible = {
+            guibg = '#3c3836',
+        },
+        error_selected = {
+            guibg = '#282828',
+            gui = "bold",
+        },
+        error_diagnostic = {
+            guibg = '#3c3836',
+        },
+        error_diagnostic_visible = {
+            guibg = '#3c3836',
+        },
+        error_diagnostic_selected = {
+            guibg = '#282828',
+            gui = "bold",
         },
     },
 }

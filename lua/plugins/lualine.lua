@@ -3,10 +3,10 @@ local lualine = require("lualine")
 local config = {
   options = {
     icons_enabled = true,
-    theme = 'gruvbox_material',
-    component_separators = {'|', '|'},
-    section_separators = {'', ''},
-    disabled_filetypes = {'NvimTree'}
+    theme = 'gruvbox',
+    component_separators = {left = '|', right = '|'},
+    section_separators = {left = '', right = ''},
+    disabled_filetypes = {'NvimTree', 'Dashboard'}
   },
   sections = {
     lualine_a = {'mode'},
