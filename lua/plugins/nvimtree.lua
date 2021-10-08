@@ -4,7 +4,7 @@ require'nvim-tree'.setup {
     auto_close = true,
     open_on_tab = true,
     update_focused_file = { enable = true },
-    view = { side = 'right', width = 25 }
+    view = { width = 25 }
 }
 
 local map = vim.api.nvim_set_keymap

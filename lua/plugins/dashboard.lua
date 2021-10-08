@@ -11,8 +11,6 @@ map('n', '<leader>fn', ':DashboardNewFile<CR>', {noremap=true, silent=true})
 -- Set what is displayed in the dashboard itself
 vim.g.dashboard_custom_header = {
   '                                          ',
-  '                                          ',
-  '                                          ',
   '               ▄▄██████████▄▄             ',
   '               ▀▀▀   ██   ▀▀▀             ',
   '       ▄██▄   ▄▄████████████▄▄   ▄██▄     ',
@@ -31,6 +29,7 @@ vim.g.dashboard_custom_header = {
   '       ▀███    ▀▀██████████▀▀▀   ███▀     ',
   '         ▀    ▄▄▄    ██    ▄▄▄    ▀       ',
   '               ▀████████████▀             ',
+  '                                          ',
 }
 
 vim.g.dashboard_custom_section = {
@@ -46,8 +45,8 @@ vim.g.dashboard_custom_footer = {
 
 -- Set the dashboard colors
 vim.cmd[[
-    highlight dashboardFooter    ctermfg=Yellow
-    highlight dashboardHeader    ctermfg=Yellow
-    highlight dashboardCenter    ctermfg=Gray
-    highlight dashboardShortCut  ctermfg=Gray
+    :highlight dashboardFooter    guifg='#FABD2F'
+    :highlight dashboardHeader    guifg='#FABD2F'
+    :highlight dashboardCenter    guifg='#665c54'
+    :highlight dashboardShortCut  guifg='#665c54'
 ]]

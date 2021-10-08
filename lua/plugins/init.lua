@@ -4,8 +4,8 @@ return require'packer'.startup(function()
 
     -- Plugins WITHOUT inline configurations
     use 'glepnir/dashboard-nvim'
-    use 'sainnhe/gruvbox-material'
-    use 'sbdchd/neoformat'
+    use 'mhartington/formatter.nvim'
+    use 'morhetz/gruvbox'
     use 'windwp/nvim-autopairs'
     use 'norcalli/nvim-colorizer.lua'
     use 'terrortylor/nvim-comment'
@@ -16,6 +16,9 @@ return require'packer'.startup(function()
         vim.cmd[[let g:suda_smart_edit = 1]]
 
     -- Plugins WITH inline configurations
+    use {'akinsho/bufferline.nvim', 
+        requires = 'kyazdani42/nvim-web-devicons'
+    }
     use {'lewis6991/gitsigns.nvim',
         requires = {'nvim-lua/plenary.nvim'},
     }

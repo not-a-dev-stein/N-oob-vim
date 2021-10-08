@@ -22,14 +22,17 @@ I decided not to use [lspinstall](https://github.com/kabouzeid/nvim-lspinstall) 
 
 ### Plugins included and pre-configured are:
   - [autopairs](https://github.com/windwp/nvim-autopairs) - for automatic pairing of brackets, parenthesis, etc.
+  - [bufferline](https://github.com/akinsho/bufferline.nvim) - A nice tab/buffer bar
   - [colorizer](https://github.com/norcalli/nvim-colorizer.lua) - for showing color on HEX codes (ex. #ffffff)
   - [comment](https://github.com/terrortylor/nvim-comment) - for easier line commenting (pre-configured with 'SPACE+/')
+  - [dashboard](https://github.com/glepnir/dashboard-nvim) - Nice and clean dashboard for when you open nvim cleanly
+  - [formatter](https://github.com/mhartington/formatter.nvim) - for automatic formatting
   - [gitsigns](https://github.com/lewis6991/gitsigns.nvim) - for git signs for when and where you have diffs, and checking blame
   - [indent-blankline](https://github.com/lukas-reineke/indent-blankline.nvim) - for better indentation, showing visible signs for tabs and spaces
   - [lualine](https://github.com/hoob3rt/lualine.nvim) - a better statusline in both looks and functionality
-  - [neoformat](https://github.com/sbdchd/neoformat) - for automatic formatting
   - [nvim-tree](https://github.com/kyazdani42/nvim-tree.lua) - an easy and fast file explorer to the side of the screen
   - [suda](https://github.com/lambdalisue/suda.vim) - for automatically running nvim with sudo when needed
+  - [telescope](https://github.com/nvim-telescope/telescope.nvim) - really powerful searching tool
   - [treesitter](https://github.com/nvim-treesitter/nvim-treesitter) - for better syntax highlighting, indenting and folding (which you can use with 'za')
   - [ts-rainbow](https://github.com/p00f/nvim-ts-rainbow) - for color matching of brackets, parenthesis, etc.
   - [web-devicons](https://github.com/kyazdani42/nvim-web-devicons) - icons for other extensions, like nvim-tree and lualine 

@@ -15,6 +15,7 @@ require('mappings')
 -- Plugins --
 require('plugins.init')
 ---------------------------
+require('plugins.bufferline')
 require('plugins.cmp')
 require('plugins.comment')
 require('plugins.dashboard')

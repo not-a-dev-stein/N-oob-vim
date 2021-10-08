@@ -5,12 +5,12 @@ set.mouse = 'a'
 
 -- Colors
 set.termguicolors = true
-vim.g.colors_name = 'gruvbox-material'
+vim.g.colors_name = 'gruvbox'
 vim.cmd[[
     syntax on
-    let g:gruvbox_material_better_performance = 1
-    hi StatusLineNC guifg=none guibg=none
-]]
+    hi StatusLine guifg='#282828' guibg='#282828'
+    hi StatusLineNC guifg='#282828' guibg='#282828'
+]] -- Change these highlights if you change the colorscheme
 
 -- Clipboard
 set.clipboard = 'unnamedplus'
@@ -35,7 +35,7 @@ set.relativenumber = true
 -- Splits
 set.splitbelow = true
 set.splitright = true
-set.fillchars:append('vert:▕')
+set.fillchars:append('vert:│')
 set.fillchars:append('eob: ')
 
 -- Folding
