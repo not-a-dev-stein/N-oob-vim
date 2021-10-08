@@ -16,6 +16,10 @@ With no experience in Lua, a lot of procrastination time that should have gone t
   - [LuaSnip](https://github.com/L3MON4D3/LuaSnip) - snippets support
   - [nvim-cmp](https://github.com/hrsh7th/nvim-cmp) - for TAB completion
 
+Check the lsp.lua file to configure it with the language servers that best fit your needs. In my case I have a bunch of them installed and set to dinamically launch depending on the filetype. If you want to install them manually you can see more about how to do it [here](https://github.com/neovim/nvim-lspconfig/blob/master/CONFIG.md).
+
+I decided not to use [lspinstall](https://github.com/kabouzeid/nvim-lspinstall) for easier installing and management of language servers due to it being a bit heavier and since I could manage them myself with no worries, but if you need them I'd highly recommend installing it.
+
 ### Plugins included and pre-configured are:
   - [autopairs](https://github.com/windwp/nvim-autopairs) - for automatic pairing of brackets, parenthesis, etc.
   - [colorizer](https://github.com/norcalli/nvim-colorizer.lua) - for showing color on HEX codes (ex. #ffffff)
@@ -26,17 +30,12 @@ With no experience in Lua, a lot of procrastination time that should have gone t
   - [neoformat](https://github.com/sbdchd/neoformat) - for automatic formatting
   - [nvim-tree](https://github.com/kyazdani42/nvim-tree.lua) - an easy and fast file explorer to the side of the screen
   - [suda](https://github.com/lambdalisue/suda.vim) - for automatically running nvim with sudo when needed
-  - [telescope](https://github.com/nvim-telescope/telescope.nvim) - for easier searching and other functions
   - [treesitter](https://github.com/nvim-treesitter/nvim-treesitter) - for better syntax highlighting, indenting and folding (which you can use with 'za')
   - [ts-rainbow](https://github.com/p00f/nvim-ts-rainbow) - for color matching of brackets, parenthesis, etc.
   - [web-devicons](https://github.com/kyazdani42/nvim-web-devicons) - icons for other extensions, like nvim-tree and lualine 
 
 ### Extra plugins outside of nvim (still not 100% working, but you can try it)
   - [live-server](https://www.npmjs.com/package/live-server) - for people who do web development, no need to keep refreshing your page after every change
-
-Check the lsp.lua file to configure it with the language servers that best fit your needs. In my case I have a bunch of them installed and set to dinamically launch depending on the filetype. If you want to install them manually you can see more about how to do it [here](https://github.com/neovim/nvim-lspconfig/blob/master/CONFIG.md).
-
-I decided not to use [lspinstall](https://github.com/kabouzeid/nvim-lspinstall) for easier installing and management of language servers due to it being a bit heavier and since I could manage them myself with no worries, but if you need them I'd highly recommend installing it.
 
 ### Non-default keybindings
 `space` is your leader key by default;
@@ -45,7 +44,7 @@ I decided not to use [lspinstall](https://github.com/kabouzeid/nvim-lspinstall) 
 
 `shift+j` and `shift+k` to easily move an entire line up or down;
 
-`ctrl+shift+i` to automatically format your code with Noformat;
+`ctrl+shift+i` to automatically format your code with Nformat;
 
 `ctrl+HJKL` to navigate between splits in your screen (including nvim-tree)
 
