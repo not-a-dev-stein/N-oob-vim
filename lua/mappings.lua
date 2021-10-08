@@ -32,7 +32,7 @@ map("", "<Down>", 'v:count || mode(1)[0:1] == "no" ? "j" : "gj"', expr_opts)
 map("", "<Up>", 'v:count || mode(1)[0:1] == "no" ? "k" : "gk"', expr_opts)
 
 -- Ctrl+t to open an integrated terminal in a split, like other IDEs 
-map('n', '<C-t>', ':split | resize 15 | set nonumber norelativenumber | terminal<CR>a', {silent = true})
+map('n', '<C-t>', ':split | resize 15 | set nonumber norelativenumber | terminal<CR>:set nobuflisted<CR>a', {silent = true})
 map('t', '<C-a>','<C-\\><C-n>', opts) -- Ctrl+a to exit terminal mode
 
 -- Auto-formatting with Neoformat
