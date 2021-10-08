@@ -40,7 +40,7 @@ I decided not to use [lspinstall](https://github.com/kabouzeid/nvim-lspinstall) 
   - [ts-rainbow](https://github.com/p00f/nvim-ts-rainbow) - for color matching of brackets, parenthesis, etc.
   - [web-devicons](https://github.com/kyazdani42/nvim-web-devicons) - icons for other extensions, like nvim-tree and lualine 
 
-### Extra plugins outside of nvim (still not 100% working, but you can try it)
+### Extra plugins outside of nvim
   - [live-server](https://www.npmjs.com/package/live-server) - for people who do web development, no need to keep refreshing your page after every change
 
 ### Non-default keybindings
@@ -55,10 +55,11 @@ I decided not to use [lspinstall](https://github.com/kabouzeid/nvim-lspinstall) 
 `ctrl+hjkl` to navigate between splits in your screen (including nvim-tree)
 
 `ctrl+t` to open a terminal in split
+
 `ctrl+a` *in terminal mode* to return to normal mode
 
 ### Custom commands
-`:LiveServer` to start your live server (still not fully implemented correctly)
+`:LiveServer` to start your live server
 
 ## Biggest references and help
 Props to the [NvChad](https://github.com/NvChad/NvChad/) guys, I have used their config for a long while before using VsCode and used most of the extensions they use as a base for mine, removing what I don't use and adding what's more convenient for me. [LunarVim](https://github.com/LunarVim/LunarVim) also had a big part in it, specially due to [ChrisAtMachine's](https://www.youtube.com/channel/UCS97tchJDq17Qms3cux8wcA) videos and livestreams, it was probably the best help I got in porting my old config to Lua.
