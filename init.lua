@@ -29,6 +29,9 @@ require('plugins.treesitter')
 require'colorizer'.setup()
 require'nvim-autopairs'.setup()
 
+-- Colorscheme
+require('onedark').load()
+
 
 -- Extras --
 -- These require extra packages to be installed for use,

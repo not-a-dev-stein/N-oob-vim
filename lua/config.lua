@@ -5,7 +5,6 @@ set.mouse = 'a'
 
 -- Colors
 set.termguicolors = true
-vim.g.colors_name = 'onedark'
 
 vim.cmd[[
     autocmd ColorScheme * hi StatusLine guifg=none guibg=none | hi StatusLineNC guifg=none guibg=none | hi FoldColumn guifg='#ABB2BF' guibg=none | hi BufferVisibleSign guibg='#1f1f1f'

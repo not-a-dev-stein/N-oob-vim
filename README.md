@@ -8,7 +8,25 @@ I like Neovim. A lot. I tried using VsCode for my really basic programming needs
 
 With no experience in Lua, a lot of procrastination time that should have gone to college work poured into it and a lot of trial and error, it's alive! So now I want to maintain it and make it public so people who actually know what they are doing can help make it better.
 
-### Colorscheme used
+## Requirements
+  - Neovim 0.5+
+  - [Packer.nvim](https://github.com/wbthomason/packer.nvim) is the chosen packaging tool;
+  - [A Nerd patched font](https://www.nerdfonts.com/) - I recommend FiraCode NF, which is the one I use
+
+## Installation
+  - First, install neovim, preferably through your package manager;
+  - Install the patched font to get all the icons;
+  - Then install packer.nvim, in order to manage your plugins:
+
+`git clone --depth 1 https://github.com/wbthomason/packer.nvim\ ~/.local/share/nvim/site/pack/packer/start/packer.nvim`
+  - Now, download and extract the package in the releases or (if you want the bleeding edge), clone the repo:
+
+`git clone https://github.com/not-a-dev-stein/N-oob-vim ~/.config/nvim`
+  - Now run `nvim +PackerSync` to install and update all the plugins
+  - Install the [extras](https://github.com/not-a-dev-stein/N-oob-vim/#extra-plugins-outside-of-nvim), like live-server, for whatever extra feature you want;
+  - That's it!
+
+### Colorscheme used:
   - [onedark](https://github.com/olimorris/onedark.nvim)
 
 ### Language servers pre-configured with:
@@ -36,7 +54,7 @@ I decided not to use [lspinstall](https://github.com/kabouzeid/nvim-lspinstall) 
   - [nvim-tree](https://github.com/kyazdani42/nvim-tree.lua) - an easy and fast file explorer to the side of the screen
   - [suda](https://github.com/lambdalisue/suda.vim) - for automatically running nvim with sudo when needed
   - [telescope](https://github.com/nvim-telescope/telescope.nvim) - really powerful searching tool
-  - [treesitter](https://github.com/nvim-treesitter/nvim-treesitter) - for better syntax highlighting, indenting and folding (which you can use with 'za')
+  - [treesitter](https://github.com/nvim-treesitter/nvim-treesitter) - for better syntax highlighting, indenting and folding (which you can use with `z+a`)
   - [ts-rainbow](https://github.com/p00f/nvim-ts-rainbow) - for color matching of brackets, parenthesis, etc.
   - [web-devicons](https://github.com/kyazdani42/nvim-web-devicons) - icons for other extensions, like nvim-tree and lualine 
 
