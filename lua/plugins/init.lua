@@ -1,4 +1,4 @@
-return require'packer'.startup(function()
+return require'packer'.startup({function()
     -- Permite que o packer gerencie a si mesmo
     use 'wbthomason/packer.nvim'
 
@@ -45,4 +45,12 @@ return require'packer'.startup(function()
     use 'hrsh7th/nvim-cmp'
     use 'saadparwaiz1/cmp_luasnip'
 
-end)
+end,
+config = {
+    display = {
+        open_fn = function()
+            return require('packer.util').float({border = 'single'})
+        end
+    }
+}})
+

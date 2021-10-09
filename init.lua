@@ -32,7 +32,6 @@ require'nvim-autopairs'.setup()
 -- Colorscheme
 require('onedark').load()
 
-
 -- Extras --
 -- These require extra packages to be installed for use,
 -- it's up to you to decide what you want to use from these

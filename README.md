@@ -23,6 +23,7 @@ With no experience in Lua, a lot of procrastination time that should have gone t
 
 `git clone https://github.com/not-a-dev-stein/N-oob-vim ~/.config/nvim`
   - Now run `nvim +PackerSync` to install and update all the plugins
+  - Install the language servers you need and update them in `lsp.lua` in plugins
   - Install the [extras](https://github.com/not-a-dev-stein/N-oob-vim/#extra-plugins-outside-of-nvim), like live-server, for whatever extra feature you want;
   - That's it!
 
