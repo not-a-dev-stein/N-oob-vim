@@ -1,10 +1,9 @@
 local lualine = require("lualine")
-
 local config = {
   options = {
     icons_enabled = true,
     theme = 'codedark',
-    component_separators = {left = '', right = ''},
+    component_separators = {left = '|', right = '|'},
     section_separators = {left = '', right = ''},
     disabled_filetypes = {'NvimTree', 'Dashboard'}
   },
@@ -12,9 +11,9 @@ local config = {
     lualine_a = {'mode'},
     lualine_b = {'branch', 'b:gitsigns_status'},
     lualine_c = {},
-    lualine_x = {'encoding', 'filetype'},
-    lualine_y = {'progress'},
-    lualine_z = {{'diagnostics', sources={'nvim_lsp'}}, 'location'}
+    lualine_x = {'filetype'},
+    lualine_y = {{'diagnostics', sources={'nvim_lsp'}}},
+    lualine_z = {'location'}
   },
   inactive_sections = {
     lualine_a = {},

@@ -110,6 +110,10 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/stein/.local/share/nvim/site/pack/packer/start/lualine.nvim"
   },
+  ["markdown-preview.nvim"] = {
+    loaded = true,
+    path = "/home/stein/.local/share/nvim/site/pack/packer/start/markdown-preview.nvim"
+  },
   ["nvim-autopairs"] = {
     loaded = true,
     path = "/home/stein/.local/share/nvim/site/pack/packer/start/nvim-autopairs"

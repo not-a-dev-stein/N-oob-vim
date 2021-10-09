@@ -5,6 +5,7 @@ return require'packer'.startup({function()
     -- Plugins WITHOUT inline configurations
     use 'glepnir/dashboard-nvim'
     use 'mhartington/formatter.nvim'
+    use 'iamcco/markdown-preview.nvim'
     use 'windwp/nvim-autopairs'
     use 'norcalli/nvim-colorizer.lua'
     use 'terrortylor/nvim-comment'
@@ -39,6 +40,7 @@ return require'packer'.startup({function()
     }
     -- LSP and Snippets configurations
     use "neovim/nvim-lspconfig"
+    use 'kabouzeid/nvim-lspinstall'
     use 'hrsh7th/cmp-nvim-lsp'
     use 'hrsh7th/cmp-buffer'
     use 'L3MON4D3/LuaSnip'

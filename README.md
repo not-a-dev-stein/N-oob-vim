@@ -23,8 +23,8 @@ With no experience in Lua, a lot of procrastination time that should have gone t
 
 `git clone https://github.com/not-a-dev-stein/N-oob-vim ~/.config/nvim`
   - Now run `nvim +PackerSync` to install and update all the plugins
-  - Install the language servers you need and update them in `lsp.lua` in plugins
-  - Install the [extras](https://github.com/not-a-dev-stein/N-oob-vim/#extra-plugins-outside-of-nvim), like live-server, for whatever extra feature you want;
+  - Install the language servers you need with :LspInstall
+  - Install the [extras](https://github.com/not-a-dev-stein/N-oob-vim/#extra-plugins-outside-of-nvim) for whatever extra feature you want;
   - That's it!
 
 ### Colorscheme used:
@@ -32,15 +32,12 @@ With no experience in Lua, a lot of procrastination time that should have gone t
 
 ### Language servers pre-configured with:
   - [lspconfig](https://github.com/neovim/nvim-lspconfig) - for native LSP
+  - [lspinstall](https://github.com/kabouzeid/nvim-lspinstall) - to easily install language servers
   - [cmp-nvim-lsp](https://github.com/hrsh7th/cmp-nvim-lsp) - for better integration with the native LSP
   - [cmp-buffer](https://github.com/hrsh7th/cmp-buffer) - for suggesting words used in the buffer in the completion
   - [cmp_luasnip](https://github.com/saadparwaiz1/cmp_luasnip) - for using luasnip as a source for nvim-cmp's completion
   - [LuaSnip](https://github.com/L3MON4D3/LuaSnip) - snippets support
   - [nvim-cmp](https://github.com/hrsh7th/nvim-cmp) - for TAB completion
-
-Check the lsp.lua file to configure it with the language servers that best fit your needs. In my case I have a bunch of them installed and set to dinamically launch depending on the filetype. If you want to install them manually you can see more about how to do it [here](https://github.com/neovim/nvim-lspconfig/blob/master/CONFIG.md).
-
-I decided not to use [lspinstall](https://github.com/kabouzeid/nvim-lspinstall) for easier installing and management of language servers due to it being a bit heavier and since I could manage them myself with no worries, but if you need them I'd highly recommend installing it.
 
 ### Plugins included and pre-configured are:
   - [autopairs](https://github.com/windwp/nvim-autopairs) - for automatic pairing of brackets, parenthesis, etc.
@@ -52,6 +49,7 @@ I decided not to use [lspinstall](https://github.com/kabouzeid/nvim-lspinstall) 
   - [gitsigns](https://github.com/lewis6991/gitsigns.nvim) - for git signs for when and where you have diffs, and checking blame
   - [indent-blankline](https://github.com/lukas-reineke/indent-blankline.nvim) - for better indentation, showing visible signs for tabs and spaces
   - [lualine](https://github.com/hoob3rt/lualine.nvim) - a better statusline in both looks and functionality
+  - [markdown-preview](https://github.com/iamcco/markdown-preview.nvim) - An easy way to preview how your markdown files will look like
   - [nvim-tree](https://github.com/kyazdani42/nvim-tree.lua) - an easy and fast file explorer to the side of the screen
   - [suda](https://github.com/lambdalisue/suda.vim) - for automatically running nvim with sudo when needed
   - [telescope](https://github.com/nvim-telescope/telescope.nvim) - really powerful searching tool
@@ -63,7 +61,7 @@ I decided not to use [lspinstall](https://github.com/kabouzeid/nvim-lspinstall) 
   - [live-server](https://www.npmjs.com/package/live-server) - for people who do web development, no need to keep refreshing your page after every change
 
 ### Non-default keybindings
-`space` is your leader key by default;
+`space` is your leader key by default, **press it twice to quickly switch between the last two buffers**;
 
 `< >` to change indentation levels multiple times on visual mode, instead of having to use `.` to repeat;
 
@@ -71,11 +69,13 @@ I decided not to use [lspinstall](https://github.com/kabouzeid/nvim-lspinstall) 
 
 `ctrl+shift+i` to automatically format your code with Nformat;
 
-`ctrl+hjkl` to navigate between splits in your screen (including nvim-tree)
+`ctrl+hjkl` to navigate between splits in your screen (including nvim-tree);
 
-`ctrl+t` to open a terminal in split
+`ctrl+t` to open a terminal in split;
 
-`ctrl+a` *in terminal mode* to return to normal mode
+`ctrl+a` *in terminal mode* to return to normal mode;
+
+`ctrl+m` to toggle the preview of your Markdown files with markdown-preview;
 
 ### Custom commands
 `:LiveServer` to start your live server
