@@ -70,7 +70,7 @@ With no experience in Lua, a lot of procrastination time that should have gone t
 
 `ctrl+hjkl` to navigate between splits in your screen (including nvim-tree);
 
-`ctrl+t` to open a terminal in split;
+`leader+t` to open a terminal in split;
 
 `ctrl+a` *in terminal mode* to return to normal mode;
 
