@@ -9,9 +9,7 @@ vim.o.writebackup = false
 
 -- Colors
 set.termguicolors = true
-vim.cmd[[
-    autocmd ColorScheme * hi StatusLine guifg=none guibg=none | hi StatusLineNC guifg=none guibg=none | hi FoldColumn guifg='#62666D' guibg=none | hi BufferVisibleSign guibg='#1f1f1f'
-]]  -- Change these highlights if you change the colorscheme
+vim.cmd[[autocmd ColorScheme * hi StatusLine guifg=none guibg=none | hi StatusLineNC guifg=none guibg=none | hi FoldColumn guifg='#62666D' guibg=none | hi BufferVisibleSign guibg='#1f1f1f' | hi dashboardFooter guifg='#EEA824' | hi dashboardHeader guifg='#EEA825'| hi dashboardCenter guifg='#4C4F55' | hi dashboardShortCut guifg='#4C4F55']]
 
 -- Clipboard
 set.clipboard = 'unnamedplus'
@@ -39,6 +37,8 @@ vim.wo.number = true
 set.relativenumber = true
 
 -- Misc
+vim.bo.filetype = 'indent'
+set.lazyredraw = true
 set.wildignorecase = true
 set.ignorecase = true
 set.smartcase = true

@@ -43,9 +43,8 @@ With no experience in Lua, a lot of procrastination time that should have gone t
   - [autopairs](https://github.com/windwp/nvim-autopairs) - for automatic pairing of brackets, parenthesis, etc.
   - [barbar](https://github.com/romgrk/barbar.nvim) - A nice tab/buffer bar
   - [colorizer](https://github.com/norcalli/nvim-colorizer.lua) - for showing color on HEX codes (ex. #ffffff)
-  - [comment](https://github.com/terrortylor/nvim-comment) - for easier line commenting (pre-configured with 'SPACE+/')
+  - [comment](https://github.com/terrortylor/nvim-comment) - for easier line commenting (pre-configured with 'SPACE+//')
   - [dashboard](https://github.com/glepnir/dashboard-nvim) - Nice and clean dashboard for when you open nvim cleanly
-  - [formatter](https://github.com/mhartington/formatter.nvim) - for automatic formatting
   - [gitsigns](https://github.com/lewis6991/gitsigns.nvim) - for git signs for when and where you have diffs, and checking blame
   - [indent-blankline](https://github.com/lukas-reineke/indent-blankline.nvim) - for better indentation, showing visible signs for tabs and spaces
   - [lualine](https://github.com/hoob3rt/lualine.nvim) - a better statusline in both looks and functionality

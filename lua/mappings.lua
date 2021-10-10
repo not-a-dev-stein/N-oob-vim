@@ -29,20 +29,20 @@ map('v', 'J', ':m \'>+1<CR>gv=gv', opts)
 map('v', 'K', ':m \'<-2<CR>gv=gv', opts)
 
 -- Using j/k/up/down to jump lines (even wrapped ones) for better navigation
-map("", "j", 'v:count || mode(1)[0:1] == "no" ? "j" : "gj"', expr_opts)
-map("", "k", 'v:count || mode(1)[0:1] == "no" ? "k" : "gk"', expr_opts)
-map("", "<Down>", 'v:count || mode(1)[0:1] == "no" ? "j" : "gj"', expr_opts)
-map("", "<Up>", 'v:count || mode(1)[0:1] == "no" ? "k" : "gk"', expr_opts)
+map("", "j", 'gj', expr_opts)
+map("", "k", 'gk', expr_opts)
+map("", "<Down>", 'gj', expr_opts)
+map("", "<Up>", 'gk', expr_opts)
 
 -- Ctrl+t to open an integrated terminal in a split, like other IDEs 
 map('n', '<C-t>', ':split | resize 15 | set nonumber norelativenumber | terminal<CR>:set nobuflisted<CR>a', {silent = true})
 map('t', '<C-a>','<C-\\><C-n>', opts) -- Ctrl+a to exit terminal mode
 
+-- Auto-formatting
+map('', '<C-I>', '<ESC>:lua vim.lsp.buf.formatting<CR>', opts)
 
 -- Plugin mappings --
 --------------------------------------------------
--- Auto-formatting with Neoformat
-map('', '<C-I>', '<ESC>:Format<CR>', opts)
 
 -- Start the preview when editing Markdown files
 map('n', '<C-m>', '<Plug>MarkdownPreviewToggle', {silent = true})

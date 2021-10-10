@@ -13,21 +13,8 @@ require('config')
 require('mappings')
 
 -- Plugins --
-require('plugins.init')
----------------------------
-require('plugins.barbar')
-require('plugins.cmp')
-require('plugins.comment')
-require('plugins.dashboard')
-require('plugins.gitsigns')
-require('plugins.lsp')
-require('plugins.lualine')
-require('plugins.nvimtree')
-require('plugins.telescope')
-require('plugins.treesitter')
----------------------------
-require'colorizer'.setup()
-require'nvim-autopairs'.setup()
+require('colorizer').setup()
+require('nvim-autopairs').setup()
 
 -- Colorscheme
 require('onedark').load()

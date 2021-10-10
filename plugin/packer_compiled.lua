@@ -93,10 +93,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/stein/.local/share/nvim/site/pack/packer/start/dashboard-nvim"
   },
-  ["formatter.nvim"] = {
-    loaded = true,
-    path = "/home/stein/.local/share/nvim/site/pack/packer/start/formatter.nvim"
-  },
   ["gitsigns.nvim"] = {
     loaded = true,
     path = "/home/stein/.local/share/nvim/site/pack/packer/start/gitsigns.nvim"
@@ -105,6 +101,10 @@ _G.packer_plugins = {
     config = { "\27LJ\2\2r\0\0\2\0\4\0\a6\0\0\0'\1\1\0B\0\2\0029\0\2\0005\1\3\0B\0\2\1K\0\1\0\1\0\2\25show_current_context\2\25space_char_blankline\6 \nsetup\21indent_blankline\frequire\0" },
     loaded = true,
     path = "/home/stein/.local/share/nvim/site/pack/packer/start/indent-blankline.nvim"
+  },
+  ["lspkind-nvim"] = {
+    loaded = true,
+    path = "/home/stein/.local/share/nvim/site/pack/packer/start/lspkind-nvim"
   },
   ["lualine.nvim"] = {
     loaded = true,
@@ -133,6 +133,10 @@ _G.packer_plugins = {
   ["nvim-lspconfig"] = {
     loaded = true,
     path = "/home/stein/.local/share/nvim/site/pack/packer/start/nvim-lspconfig"
+  },
+  ["nvim-lspinstall"] = {
+    loaded = true,
+    path = "/home/stein/.local/share/nvim/site/pack/packer/start/nvim-lspinstall"
   },
   ["nvim-tree.lua"] = {
     loaded = true,

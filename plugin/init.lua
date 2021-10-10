@@ -4,7 +4,7 @@ return require'packer'.startup({function()
 
     -- Plugins WITHOUT inline configurations
     use 'glepnir/dashboard-nvim'
-    use 'mhartington/formatter.nvim'
+    use 'onsails/lspkind-nvim'
     use 'iamcco/markdown-preview.nvim'
     use 'windwp/nvim-autopairs'
     use 'norcalli/nvim-colorizer.lua'
@@ -55,4 +55,3 @@ config = {
         end
     }
 }})
-
