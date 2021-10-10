@@ -7,9 +7,9 @@ vim.g.suda_smart_edit = 1
 vim.o.swapfile = false
 vim.o.writebackup = false
 
--- Colors
+-- Dealing with colors
 set.termguicolors = true
-vim.cmd[[autocmd ColorScheme * hi StatusLine guifg=none guibg=none | hi StatusLineNC guifg=none guibg=none | hi FoldColumn guifg='#62666D' guibg=none | hi BufferVisibleSign guibg='#1f1f1f' | hi dashboardFooter guifg='#EEA824' | hi dashboardHeader guifg='#EEA825'| hi dashboardCenter guifg='#4C4F55' | hi dashboardShortCut guifg='#4C4F55']]
+vim.cmd[[autocmd ColorScheme * hi StatusLine guifg=none guibg=none | hi StatusLineNC guifg=none guibg=none | hi FoldColumn guifg='#62666D' guibg=none | hi BufferVisibleSign guibg='#1f1f1f' | hi dashboardFooter guifg='#EEA824' | hi dashboardHeader guifg='#EEA825'| hi dashboardCenter guifg='#4C4F55' | hi dashboardShortCut guifg='#4C4F55' | hi NvimTreeFolderIcon guifg='#61AFEF']]
 
 -- Clipboard
 set.clipboard = 'unnamedplus'

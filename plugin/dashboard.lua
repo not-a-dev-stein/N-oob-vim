@@ -3,7 +3,7 @@ local map = vim.api.nvim_set_keymap
 -- Set the 'backend' stuff
 vim.g.dashboard_disable_statusline = 1
 vim.g.dashboard_default_executive = "telescope"
-vim.g.indentLine_fileTypeExclude = {'dashboard'}
+vim.g.indentLine_fileTypeExclude = {'dashboard', 'packer'}
 
 -- Keymappings
 map('n', '<leader>fn', ':DashboardNewFile<CR>', {noremap=true, silent=true})
@@ -44,6 +44,4 @@ vim.g.dashboard_custom_footer = {
 }
 
 -- Set the dashboard colors
-vim.cmd[[
-    autocmd ColorScheme * highlight dashboardFooter guifg='#EEA825' | highlight dashboardHeader guifg='#EEA825'| highlight dashboardCenter guifg='#4C4F55' | highlight dashboardShortCut guifg='#4C4F55'
-]]
+vim.cmd[[autocmd ColorScheme * highlight dashboardFooter guifg='#EEA825' | highlight dashboardHeader guifg='#EEA825'| highlight dashboardCenter guifg='#4C4F55' | highlight dashboardShortCut guifg='#4C4F55']]

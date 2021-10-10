@@ -23,8 +23,8 @@ map('v', '>', '>gv', opts)
 map('v', '<', '<gv', opts)
 
 -- Easily move the entire current line up or down
-map('n', 'J', ':m .+1<CR>==', opts)
-map('n', 'K', ':m .-2<CR>==', opts)
+map('n', 'J', ':m+1<CR>', opts)
+map('n', 'K', ':m-2<CR>', opts)
 map('v', 'J', ':m \'>+1<CR>gv=gv', opts)
 map('v', 'K', ':m \'<-2<CR>gv=gv', opts)
 
@@ -47,6 +47,6 @@ map('', '<C-I>', '<ESC>:lua vim.lsp.buf.formatting<CR>', opts)
 map('n', '<C-m>', '<Plug>MarkdownPreviewToggle', {silent = true})
 
 -- Toggling nvim-tree with barbar
-vim.api.nvim_set_keymap('n', '<C-n>', ':lua require"plugins.barbar".toggle()<CR>', opts)
-vim.api.nvim_set_keymap('n', '<leader>r', ':NvimTreeRefresh<CR>', {noremap = true})
-vim.api.nvim_set_keymap('n', '<leader>n', ':NvimTreeFindFile<CR>', {noremap = true})
+map('n', '<C-n>', ':lua require"plugins.barbar".toggle()<CR>', opts)
+map('n', '<leader>r', ':NvimTreeRefresh<CR>', {noremap = true})
+map('n', '<leader>n', ':NvimTreeFindFile<CR>', {noremap = true})
