@@ -7,15 +7,15 @@ vim.g.suda_smart_edit = 1
 vim.o.swapfile = false
 vim.o.writebackup = false
 
--- Dealing with colors
+-- Dealing with custom colors
 set.termguicolors = true
-vim.cmd[[autocmd ColorScheme * hi StatusLine guifg=none guibg=none | hi StatusLineNC guifg=none guibg=none | hi FoldColumn guifg='#62666D' guibg=none | hi BufferVisibleSign guibg='#1f1f1f' | hi dashboardFooter guifg='#EEA824' | hi dashboardHeader guifg='#EEA825'| hi dashboardCenter guifg='#4C4F55' | hi dashboardShortCut guifg='#4C4F55' | hi NvimTreeFolderIcon guifg='#61AFEF']]
+vim.cmd[[autocmd ColorScheme * hi StatusLine guifg=none guibg=none | hi StatusLineNC guifg=none guibg=none | hi FoldColumn guifg='#62666D' guibg=none | hi dashboardFooter guifg='#EEA824' | hi dashboardHeader guifg='#EEA825'| hi dashboardCenter guifg='#4C4F55' | hi dashboardShortCut guifg='#4C4F55' | hi VertSplit guifg='#393b44']]
 
 -- Clipboard
 set.clipboard = 'unnamedplus'
 
 -- Completion using TAB
-set.completeopt = 'menu','menuone','noselect'
+set.completeopt = {'menu','menuone','noselect'}
 
 -- Folding
 set.foldnestmax = 2

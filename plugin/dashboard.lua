@@ -3,14 +3,13 @@ local map = vim.api.nvim_set_keymap
 -- Set the 'backend' stuff
 vim.g.dashboard_disable_statusline = 1
 vim.g.dashboard_default_executive = "telescope"
-vim.g.indentLine_fileTypeExclude = {'dashboard', 'packer'}
+vim.g.indentLine_fileTypeExclude = {'dashboard', 'packer', 'nvim-lsp-install'}
 
 -- Keymappings
 map('n', '<leader>fn', ':DashboardNewFile<CR>', {noremap=true, silent=true})
 
 -- Set what is displayed in the dashboard itself
 vim.g.dashboard_custom_header = {
-  '                                          ',
   '               ▄▄██████████▄▄             ',
   '               ▀▀▀   ██   ▀▀▀             ',
   '       ▄██▄   ▄▄████████████▄▄   ▄██▄     ',

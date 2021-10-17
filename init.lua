@@ -17,7 +17,14 @@ require('colorizer').setup()
 require('nvim-autopairs').setup()
 
 -- Colorscheme
-require('onedark').load()
+require('catppuccino').setup {
+    colorscheme = 'soft_manilo',
+    transparency = true,
+    integrations = {
+        gitsigns = true,
+    }
+}
+vim.cmd[[colorscheme catppuccino]]
 
 -- Extras --
 -- These require extra packages to be installed for use,

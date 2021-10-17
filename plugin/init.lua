@@ -3,18 +3,18 @@ return require'packer'.startup({function()
     use 'wbthomason/packer.nvim'
 
     -- Plugins WITHOUT inline configurations
-    use 'glepnir/dashboard-nvim'
-    use 'onsails/lspkind-nvim'
-    use 'iamcco/markdown-preview.nvim'
-    use 'windwp/nvim-autopairs'
-    use 'norcalli/nvim-colorizer.lua'
-    use 'terrortylor/nvim-comment'
-    use 'nvim-treesitter/nvim-treesitter'
-    use 'p00f/nvim-ts-rainbow'
-    use 'kyazdani42/nvim-web-devicons'
-    use 'olimorris/onedark.nvim'
-    use 'lambdalisue/suda.vim'
-
+    use { 'glepnir/dashboard-nvim',
+        'onsails/lspkind-nvim',
+        'iamcco/markdown-preview.nvim',
+        'windwp/nvim-autopairs',
+        'norcalli/nvim-colorizer.lua',
+        'terrortylor/nvim-comment',
+        'nvim-treesitter/nvim-treesitter',
+        'p00f/nvim-ts-rainbow',
+        'kyazdani42/nvim-web-devicons',
+        'Pocco81/Catppuccino.nvim',
+        'lambdalisue/suda.vim'
+    }
     -- Plugins WITH inline configurations
     use {'romgrk/barbar.nvim',
         requires = {'kyazdani42/nvim-web-devicons'},
@@ -39,13 +39,14 @@ return require'packer'.startup({function()
       requires = {'nvim-lua/plenary.nvim'}
     }
     -- LSP and Snippets configurations
-    use "neovim/nvim-lspconfig"
-    use 'kabouzeid/nvim-lspinstall'
-    use 'hrsh7th/cmp-nvim-lsp'
-    use 'hrsh7th/cmp-buffer'
-    use 'L3MON4D3/LuaSnip'
-    use 'hrsh7th/nvim-cmp'
-    use 'saadparwaiz1/cmp_luasnip'
+    use { 'neovim/nvim-lspconfig',
+        'williamboman/nvim-lsp-installer',
+        'hrsh7th/cmp-nvim-lsp',
+        'hrsh7th/cmp-buffer',
+        'L3MON4D3/LuaSnip',
+        'hrsh7th/nvim-cmp',
+        'saadparwaiz1/cmp_luasnip'
+    }
 
 end,
 config = {
