@@ -28,11 +28,11 @@ With no experience in Lua, a lot of procrastination time that should have gone t
   - That's it!
 
 ### Colorscheme used:
-  - [onedark](https://github.com/olimorris/onedark.nvim)
+  - [catppuccino](https://github.com/Pocco81/Catppuccino.nvim) - using the Soft Manilo version
 
 ### Language servers pre-configured with:
   - [lspconfig](https://github.com/neovim/nvim-lspconfig) - for native LSP
-  - [lspinstall](https://github.com/kabouzeid/nvim-lspinstall) - to easily install language servers
+  - [lsp-installer](https://github.com/williamboman/nvim-lsp-installer) - to easily install language servers
   - [cmp-nvim-lsp](https://github.com/hrsh7th/cmp-nvim-lsp) - for better integration with the native LSP
   - [cmp-buffer](https://github.com/hrsh7th/cmp-buffer) - for suggesting words used in the buffer in the completion
   - [cmp_luasnip](https://github.com/saadparwaiz1/cmp_luasnip) - for using luasnip as a source for nvim-cmp's completion
